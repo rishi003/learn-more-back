@@ -1,0 +1,19 @@
+{
+  "name": "learn-more-back",
+  "version": "1.0.0",
+  "description": "Backend for  Learn More",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rishi003/learn-more-back.git"
+  },
+  "author": "Rishabh Awatani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rishi003/learn-more-back/issues"
+  },
+  "homepage": "https://github.com/rishi003/learn-more-back#readme"
+}
