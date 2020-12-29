@@ -6,10 +6,10 @@ admin:
 apiEndpoints:
   api:
     host: "localhost"
-    paths: "/ip"
+    paths: "/"
 serviceEndpoints:
   httpbin:
-    url: "https://httpbin.org"
+    url: "http://localhost:3000"
 policies:
   - basic-auth
   - cors
@@ -24,7 +24,7 @@ pipelines:
     apiEndpoints:
       - api
     policies:
-      # - key-auth:
+      - basic-auth:
       - proxy:
           - action:
               serviceEndpoint: httpbin
