@@ -4,7 +4,8 @@
   "description": "Backend for  Learn More",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start": "babel-node server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/rishi003/learn-more-back/issues"
   },
-  "homepage": "https://github.com/rishi003/learn-more-back#readme"
+  "homepage": "https://github.com/rishi003/learn-more-back#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11"
+  },
+  "dependencies": {
+    "express-gateway": "^1.16.10"
+  }
 }

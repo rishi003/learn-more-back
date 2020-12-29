@@ -24,7 +24,7 @@ pipelines:
     apiEndpoints:
       - api
     policies:
-      - key-auth:
+      # - key-auth:
       - proxy:
           - action:
               serviceEndpoint: httpbin
