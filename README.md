@@ -1,0 +1,2 @@
+# Learn More
+This is a solution under development for building intelligence using the existing knowledge management systems in the organoizations and integrating with many others, providing a better and efficient work environment.
