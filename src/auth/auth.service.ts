@@ -27,8 +27,13 @@ export class AuthService {
   }
 
   async login(user: User) {
-    const payload = { username: user.userName, sub: user.email };
+    const payload = {
+      iss: 'Learn More',
+      sub: `${user.firstName}_${user.lastName}`,
+      role: 'user',
+    };
     return {
+      expires_in: process.env.JWT_EXPIRY,
       access_token: this.jwtService.sign(payload),
     };
   }
