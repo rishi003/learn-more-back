@@ -1,4 +1,5 @@
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { createCipheriv, randomBytes } from 'crypto';
 
 @Entity()
 export class GithubConnector {
@@ -8,4 +9,6 @@ export class GithubConnector {
   clientSecret: string;
   @Column()
   clientId: string;
+  @Column()
+  code: string;
 }

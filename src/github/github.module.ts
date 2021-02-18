@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { HttpModule, Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AuthModule } from 'src/auth/auth.module';
@@ -11,6 +11,7 @@ import { GithubServices } from './github.services';
   exports: [GithubServices],
   controllers: [GithubController],
   imports: [
+    HttpModule,
     AuthModule,
     ConfigModule.forRoot(),
     TypeOrmModule.forFeature([GithubConnector]),
