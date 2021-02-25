@@ -3,7 +3,7 @@
   "host": "localhost",
   "port": 5432,
   "username": "postgres",
-  "password": "admin",
+  "password": "postgres",
   "database": "learn_more",
   "entities": ["dist/**/*.entity{.ts,.js}"],
   "synchronize": true
